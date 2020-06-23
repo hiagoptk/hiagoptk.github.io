@@ -36,6 +36,13 @@ h2, h3, h4, h5, h6, p {
     font-family: 'Nunito', sans-serif;
 }
 
+.box {
+    border-radius: 5px;
+    border-left: solid rgb(255, 196, 2) 3px; 
+    padding: 15px;
+}
+
+
 /*                  HEADER                 */
 
 #header {
@@ -86,5 +93,87 @@ h2, h3, h4, h5, h6, p {
     #welcome-section {
         padding: 10px;
         font-size: 20px;        
+    }
+}
+
+/* ----  ABOUT  ----*/
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    min-width: 70%;
+    height: 100vh;   
+}
+
+#profile {
+    width: 30%;
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#profileImg {
+    max-width: 320px;
+    padding: 8px;
+    margin-left: 10px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+
+}
+
+#sep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 60%;
+    
+}
+
+
+#intro {
+    width: 100%;
+    margin-bottom: 20px ;
+}
+
+#curiosidades, #habilidades {
+    width: 50%;   
+}
+
+@media (max-width: 720px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: auto;
+    }
+    #profile {
+        width: 80%;
+        height: auto;
+
+        margin-bottom: 20px;
+    }
+
+    #sep {
+        width: 80%;
+        
+    }
+
+    #intro, #habilidades {
+        width: 100%;
+        margin-bottom: 20px;
+        border-left: none;
+        border-right: solid rgb(255, 196, 2) 3px; ;
+    }
+    #curiosidades {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
