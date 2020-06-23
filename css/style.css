@@ -17,8 +17,6 @@
 body{
     color: #f0f0f5;
     background-color: #141414;
-   
-    
 }
 
 a {
@@ -34,10 +32,37 @@ h1 {
     font-family: 'Righteous', cursive;
 } 
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, p {
     font-family: 'Nunito', sans-serif;
 }
 
-p {
-    font-family: 'Nunito', sans-serif;
+/*                  HEADER                 */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    padding: 0 30px 0 15px;
+    background-color: black;
+    border-bottom: rgb(255, 196, 0) 1px solid;
 }
+
+#dropbtn {
+    display: none;
+}
+
+#nav {
+    list-style: none;
+    display: flex;
+}
+
+#nav li {
+    margin: 10px;
+    padding: 10px;
+}
+
+
