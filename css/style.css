@@ -26,6 +26,7 @@ p {
     top: 0;
     width: 100%;
     padding: 0 30px 0 15px;
+    border-bottom: blue 1px solid;
     
 
     background-color: black;
@@ -33,6 +34,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 
 #dropbtn {
@@ -48,7 +51,7 @@ p {
 #nav li {
     margin: 10px;
     padding: 10px;
-    border-bottom: blue 1px solid;
+    
 }
 
 /* ----  WELCOME  ----*/
@@ -94,9 +97,10 @@ p {
 }
 
 .box {
-    background-color: rgba(130, 52, 231, 0.384);
+    border-left: solid rgba(130, 52, 231, 0.384) 3px; 
     padding: 15px;
     border-radius: 5px;
+    
 }
 
 #profile {
@@ -113,10 +117,10 @@ p {
 
 
 #profileImg {
-    border-radius: 3px;
     max-width: 350px;
-    border-bottom: black solid 1px;
-
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    padding: 8px;
 }
 
 #sep {
@@ -167,6 +171,7 @@ p {
         margin-bottom: 20px;
     }
 }
+
 .barraNivel {
     display: flex;
     flex-direction: column;
@@ -198,8 +203,7 @@ p {
 .bolinha {
     width: 10px;
     height: 10px;
-    border-radius: 50%;
-    background-color: white;
+    
     
 }
 
@@ -247,18 +251,35 @@ p {
 /*   ----  PROJETOS   ---- */
 #project-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     border: solid white 1px;
 
     padding: 25px;
 }
 
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
 .proj {
     max-width: 45%;
     margin: 20px;
     padding: 10px;
-    background-color: rgba(137, 43, 226, 0.623);
+    border-left: solid rgba(130, 52, 231, 0.384) 3px;
+    border-radius: 5px;
+    background-color: rgba(130, 52, 231, 0.267);
+
 
     display: flex;
     flex-direction: column;
@@ -268,23 +289,39 @@ p {
 .imgProj {
     max-width: 80%;
     border-radius: 3px;
-
     margin-bottom: 15px;
 }
 
-@media (max-width: 720px) {
-    #project-section {
-        padding: 10px;
-        border: blueviolet solid 1px;
-    }
-    
+@media (max-width: 600px) {
     .proj {
-        width: 100%;
-        margin: 10px;
+        max-width: 100%;
+        
+    }
 
-        border: cyan solid 1px;
+    .imgProj {
+
     }
 }
+
+.projectBtn {
+    display: flex;
+    justify-content: space-;
+    
+
+    padding: 0 40px;
+    margin: 5px 0;
+}
+
+.projectBtn i {
+    padding: 0 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.projectBtn i:hover {
+    color: skyblue;
+}
+
 /*   ----  ANIMAÇÕES  ---- */ 
 @keyframes fadeIn {
     from {
