@@ -6,3 +6,38 @@
  all the way trhough, please ^-^' 
 \*                                         */
 
+/*         CONFIGURAÇÕES GERAIS            */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #f0f0f5;
+    background-color: #141414;
+   
+    
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f5;
+}
+
+a:hover {
+    color: aquamarine;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+} 
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
