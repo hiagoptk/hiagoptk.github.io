@@ -109,7 +109,7 @@ h2, h3, h4, h5, h6, p {
 
 #profile {
     width: 30%;
-    height: 75vh;
+    height: auto;
 
     display: flex;
     flex-direction: column;
@@ -119,12 +119,16 @@ h2, h3, h4, h5, h6, p {
 
 
 #profileImg {
-    max-width: 320px;
+    max-width: 300px;
     padding: 8px;
     margin-left: 10px;
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
 
+}
+
+.person {
+    margin-top: 15px;
 }
 
 #sep {
@@ -213,7 +217,7 @@ h2, h3, h4, h5, h6, p {
 }
 
 #introvert {
-    padding-left: 38%;
+    padding-left: 29%;
 }
 
 #individual {
