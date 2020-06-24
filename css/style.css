@@ -170,7 +170,7 @@ h2, h3, h4, h5, h6, p {
         width: 100%;
         margin-bottom: 20px;
         border-left: none;
-        border-right: solid rgb(255, 196, 2) 3px; ;
+        border-right: solid rgb(255, 196, 2) 3px;
     }
     #curiosidades {
         width: 100%;
@@ -311,4 +311,109 @@ h2, h3, h4, h5, h6, p {
         max-width: 100%;   
     }
 
+}
+
+
+
+/*              CONTATO             */ 
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    padding: 45px;
+}
+
+#contact-section h2 {
+    align-self: flex-start;
+}
+
+.mainbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#godbye {
+    max-width: 40%;
+    height: auto;  
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+    width: 45%;
+    margin: 25px;
+    padding: 10px;
+}
+
+.formGroup {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.formEntry {
+    border-style: none;
+    border-bottom: goldenrod 1px solid;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    color: #f0f0f5;
+}
+
+#message {
+    width: 100%;
+    color: #f0f0f5;
+    background-color: transparent;
+    
+    border-style: none;
+    border-bottom: goldenrod 1px solid;
+    border-radius: 5px;  
+}
+
+form button {
+    border-style: none;
+    border-radius: 5px;
+
+    color: #f0f0f5;
+    background-color: rgb(235, 199, 0);
+
+    width: 100%;
+    height: 40px;
+
+    cursor: pointer;
+
+}
+
+@media (max-width: 720px) {
+    #contact-section {
+        height: auto;
+        padding: 15px;
+    }
+
+    .mainbox {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    } 
+
+    #godbye {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    #contato {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px;
+
+        border-left: none;
+        border-right: solid rgb(255, 196, 2) 3px;
+    }
 }
