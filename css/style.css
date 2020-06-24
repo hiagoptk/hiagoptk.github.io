@@ -177,3 +177,77 @@ h2, h3, h4, h5, h6, p {
         margin-bottom: 20px;
     }
 }
+
+.barraNivel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barraGroup {
+    width: 90%;
+    height: 20px;
+    margin: 17px 0;
+
+}
+
+.txt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+}
+
+.barra {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: black;
+ 
+}
+
+.bolinha {
+    width: 10px;
+    height: 10px;
+    color: rgb(255, 217, 0);
+}
+
+#introvert {
+    padding-left: 38%;
+}
+
+#individual {
+    padding-left: 50%;
+}
+
+#noturno {
+    padding-left: 75%;
+}
+
+#informal {
+    padding-left: 80%;
+}
+
+#renew{
+    padding-left: 89%;
+}
+
+#html {
+    padding-left: 55%;
+}
+
+#css {
+    padding-left: 55%;
+}
+
+#javascript {
+    padding-left: 65%;
+}
+
+#reactjs {
+    padding-left: 35%;
+}
+
+#uxdesign {
+    padding-left: 40%;
+}
