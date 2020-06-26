@@ -16,7 +16,7 @@
 
 body{
     color: #f0f0f5;
-    background-color: #141414;
+    background-color: #0b0116;
 }
 
 a {
@@ -54,7 +54,7 @@ h2, h3, h4, h5, h6, p {
     
     width: 100%;
     padding: 0 30px 0 15px;
-    background-color: black;
+    background-color: rgb(4, 0, 17);
     border-bottom: rgb(255, 196, 0) 1px solid;
 }
 
