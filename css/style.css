@@ -16,7 +16,7 @@
 
 body{
     color: #f0f0f5;
-    background-color: #0b0116;
+    background-color: #0C012F;
 }
 
 a {
@@ -305,10 +305,14 @@ h2, h3, h4, h5, h6, p {
 
 
 @media (max-width: 720px) {
+    #project-section {
+      padding: 20px 10px;
+    }
     .projetos {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     .proj {
