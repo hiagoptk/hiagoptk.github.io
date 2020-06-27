@@ -27,21 +27,15 @@
 
     <section id="welcome-section">
         
-        <h1> Seja bem-vinde ao meu portifólio!</h1>
-        <p> Aqui cê vai conhecer um pouco mais sobre mim, meus objetivos 
-            e  meu trajeto até o momento.
-        </p>
-        <p>E ainda tem a possibilidade de experimentar na prática cada um dos projetos 
-            mais legais que eu já me envolvi.
-        </p>
-        <p> Espero que goste! </p>
+        <h1 class="typed"> Seja bem-vinde ao meu portifólio!</h1>
+        
        
     </section>
 
     <section id="about">
         <h2></h2>
         <!--PERFIL-->
-        <div id="profile" class="box">
+        <div id="profile" class="box" data-animate='right'>
             <p><i class="fas fa-map-marker-alt"></i> Rio de Janeiro/RJ - Brasil</p>
             <img id="profileImg" src="./assets/profile4.png" alt="">
            
@@ -64,7 +58,7 @@
         <div id="sep">
 
             <!--INTRO-->
-            <div id="intro" class="box">
+            <div id="intro" class="box" data-animate='left'>
                 <h3><i class="fas fa-couch"></i> Resumindo um pouco essa história... </h3>
                 <p>Comecei a me interessar pela área de front-end em meados de 2016 e em 2017 eu 
                     comecei o curso de programaçao da freeCodeCamp. 
@@ -81,7 +75,7 @@
             </div>
 
                 <!--CURIOSIDADES-->
-            <div id="curiosidades" class="box">
+            <div id="curiosidades" class="box" data-animate='right'>
                 <h3><i class="fas fa-cat"></i> Algumas curiosidades sobre mim:</h3>
                 <div class="barraNivel">
 
@@ -144,7 +138,7 @@
             </div>
 
             <!--HABILIDADES-->
-            <div id="habilidades" class="box">
+            <div id="habilidades" class="box" data-animate='left'>
                 <h3> Minhas Habilidades:</h3>
                 <div class="barraNivel">
 
@@ -202,40 +196,40 @@
     <section id="project-section">
         <h2><i class="fas fa-folder-open"></i> Se liga só em alguns dos projetos que eu já fiz </h2>
         <div class="projetos">
-            <div class="proj">
+            <div class="proj" data-animate='right'>
                 <img class="imgProj" src="./assets/p1.png">
                 <h3>Tribute Page Responsiva</h3>
                 <p>HTML5 e CSS3</p>
                 <div class="projectBtn">
                     <a href="http://tobast.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="http://"><i class="fas fa-code"></i></a>
+                    <a href="https://github.com/hiagoptk/tribute-bast" target="_blank"><i class="fas fa-code"></i></a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj" data-animate='right'>
                 <img class="imgProj" src="./assets/p2.png" alt="">
                 <h3>Formulário Responsivo</h3>
                 <p>HTML5 e CSS3</p>
                 <div class="projectBtn">
                     <a href="http://surveyform4fcc.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="http://"><i class="fas fa-code"></i></a>
+                    <a href="https://github.com/hiagoptk/survey-form"target="_blank" ><i class="fas fa-code"></i></a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj" data-animate='right'>
                 <img class="imgProj" src="./assets/p3.png" alt="">
                 <h3>Página de Vendas Responsiva</h3>
                 <p>HTML5 e CSS3</p>
                 <div class="projectBtn">
                     <a href="http://azebenistore.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="http://"><i class="fas fa-code"></i></a>
+                    <a href="https://github.com/hiagoptk/survey-form" target="_blank"><i class="fas fa-code"></i></a>
                 </div>
             </div>
-            <div class="proj">
+            <div class="proj" data-animate='right'>
                 <img class="imgProj" src="./assets/p4.png" alt="">
                 <h3>Página Responsiva de Documentação sobre Gradientes no CSS</h3>
                 <p>HTML5 e CSS3</p>
                 <div class="projectBtn">
                     <a href="http://cssgradient-doc.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="http://"><i class="fas fa-code"></i></a>
+                    <a href="https://github.com/hiagoptk/doc-page" target="_blank"><i class="fas fa-code"></i></a>
                 </div>
             </div>
         </div>    
@@ -244,7 +238,7 @@
     <section id="contact-section">
        <h2>Bom, eu acho que é isso...</h2>
         <div class="mainbox">
-            <div class="box" id="godbye">
+            <div class="box" id="godbye" data-animate='right'>
                 <p> Um tempo atrás, uma menina me disse que o tempo é nosso bem mais precioso 
                     e que a gente deveria agradecer sempre que alguém resolvesse usá-lo com a gente. 
                 </p>
@@ -257,7 +251,7 @@
             </div>
 
             
-                <form action="" id="contato" class="box">
+                <form action="" id="contato" class="box" data-animate='left'>
                     <h3>Pega uma <i class="fas fa-beer"></i> e vamos conversar </h3>
                     <div class="formGroup">
                         <label for="name">Nome</label>
@@ -298,5 +292,7 @@
 
 
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
