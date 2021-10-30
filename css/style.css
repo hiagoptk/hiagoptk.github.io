@@ -1,5 +1,5 @@
 /*       ---------- WARNING ---------------
-      This is a mobile first made css           */
+This is a mobile first made css           */
 
 * {
    font-family: 'Voltaire', sans-serif;
@@ -18,8 +18,8 @@
    max-width: 800px;
    display: flex;
    flex-direction: column;
+   align-items: flex-start;
    justify-content: space-between;
-   align-items: center;
    
 }
 
@@ -31,20 +31,24 @@ nav {
    width: 100%;
    display: flex;
    justify-content: space-between;
-   align-items: center;
-   padding-left: 1.5em;
+   align-items: flex-end;
+   padding-left: 2em;
+   
+   z-index: 1;
 }
 
 nav h1 {
-   font-size: 1.2em;
+   font-size: 1.3em;
 }
 
 nav ul {
    list-style: none;
    display: flex;
    justify-content: space-evenly;
-   
+   align-items: flex-end;
    width: 60vw;
+   margin-top: 10px;
+   
 }
 
 nav ul li {
@@ -66,7 +70,7 @@ nav a:hover {
 /*  ----------------- HOME --------------------*/
 #home {
    width: 100vw;
-   min-height:100vh;
+   height:100vh;
    background-color:rgb(13, 13, 13);
    
    display: flex;
@@ -94,8 +98,8 @@ nav a:hover {
 
 @keyframes fadeInHomeText {
    from {
-      font-size: 0.8em;
-      opacity: 0.2;
+      font-size: 0.2em;
+      opacity: 0.1;
    }
    to {
       opacity: 1;
@@ -109,9 +113,11 @@ nav a:hover {
    min-height: 100vh;
    height: auto;
    background-color:rgb(13, 13, 13);
-   padding-top: 50px;
+   
    display: flex;
    flex-direction: column;
+   align-items: flex-start;
+   
    justify-content: space-between;
    color: whitesmoke;
    font-size: 1.2em;
@@ -134,8 +140,9 @@ nav a:hover {
 #profile #profileImg {
    width: 100%;
    padding: 8px;
-   border-top-left-radius: 30%;
-   border-bottom-right-radius: 30%;
+   /*border-top-left-radius: 30%;
+   border-bottom-right-radius: 30%;*/
+   border-radius: 50%;
    
    border: solid 3px;
    
@@ -171,9 +178,9 @@ nav a:hover {
 }
 
 .barraNivel {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }
 
 .barraGroup {
@@ -183,24 +190,24 @@ nav a:hover {
 }
 
 .txt {
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 2px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
 
 }
 
 .barra {
-   width: 100%;
-   height: 8px;
-   border-radius: 5px;
-   background-color: rgb(51, 51, 51);
-
+      width: 100%;
+      height: 8px;
+      border-radius: 5px;
+      background-color: rgb(51, 51, 51);
+   
 }
 
 .bolinha {
-   width: 10px;
-   height: 10px;
-   color: rgb(255, 255, 153);
+      width: 10px;
+      height: 10px;
+      color: rgb(255, 255, 153);
 }
 
 /* - Curiosity - */
@@ -234,28 +241,28 @@ nav a:hover {
 
 #html {
    padding-left: 55%;
-   animation: skillsLevel 3s;
+   animation: skillsLevel 5s;
 }
 
 #css {
    padding-left: 55%;
-   animation: skillsLevel 3s;
+   animation: skillsLevel 5s;
    
 }
 
 #javascript {
    padding-left: 65%;
-   animation: skillsLevel 3s;
+   animation: skillsLevel 5s;
 }
 
 #reactjs {
    padding-left: 45%;
-   animation: skillsLevel 3s;
+   animation: skillsLevel 5s;
 }
 
 #uxdesign {
    padding-left: 40%;
-   animation: skillsLevel 3s;
+   animation: skillsLevel 5s;
 }
 
 @keyframes curiosityLevel {
@@ -289,14 +296,13 @@ nav a:hover {
 }
 
 #projects #container {
-   width: 80vw;
- 
+   width: 80vw;  
 }
 
 #projects #container .imgProj {
-   width: 90%;
-   border-radius: 3px;
-   margin-bottom: 15px;
+      width: 90%;
+      border-radius: 3px;
+      margin-bottom: 15px;
 }
 
 .projetos {
@@ -316,14 +322,14 @@ nav a:hover {
 }
 
 .projectBtn {
-   display: flex;
-   font-size: xx-large;    
-   padding: 0 40px;
-   margin: 5px 0;
+      display: flex;
+      font-size: xx-large;    
+      padding: 0 40px;
+      margin: 5px 0;
 }
 
 .projectBtn i {
-   margin: 5px 50px;
+      margin: 5px 50px;
 }
 
 /*  ----------------- CONTATO --------------------*/
@@ -354,6 +360,16 @@ input, textarea {
    border-style: none;
    border-bottom: 1px solid goldenrod;
    border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+button {
+   background-color: rgb(41, 0, 102);
+   width: 100%;
+   border: none;
+   border-radius: 5px;
+   
+   
 }
 
 /*  ----------------- FOOTER --------------------*/
@@ -364,231 +380,244 @@ footer {
    background: whitesmoke;
 }
 
-/*  ----------------- Responsividade --------------------*/
+      /*  ----------------- Responsividade --------------------*/
 
-     
-     @media screen and (min-width: 480px) {
-        /*  ----------------- NAVBAR --------------------*/
-     
-        nav  {
-           font-size: 1em;
-           
-        }
-        
-        nav h1, nav ul li  {
-           font-size: 1.5em;
-        }
+@media screen and (min-width: 480px) {
+   /*  ----------------- NAVBAR --------------------*/
+
+   nav,  {
+      font-size: 1em;
       
-        /*  ----------------- PROFILE --------------------*/
-        #about {
-           padding: 50px 0 0 0;
-           flex-wrap: wrap;
-        }
-        
-        #profile, #myPath {
-           min-width: 350px;
-           font-size: 1.1em;
-        }
-        
-        #mySkills {
-           flex-direction: row;
-        }
-        
-        #habilidades, #curiosidades {
-           width: 45%;         
-        }
-        
-        /*  ----------------- PROJECTS --------------------*/
-        
-        #projects {
-           padding: 50px 0 0 0;
-        }
-          
-        .projetos {
-           
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-        }
-        
-        .proj {
-           max-width: 95%;
-           
-     
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-        }
-        
-        /*  ----------------- CONTATO --------------------*/
-        #contact {
-           padding-top: 50px;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           
-        }
-        
-        #boxContact {
-           width: 80vw;
-           height: 100vh;
-           display: flex;
-           flex-direction: column;
-        }
-        
-        #textContact, #formContact {
-           margin-bottom: 20px;
-           width: 50vw;
-        }
-        
-          
-     }
-     
-     @media screen and (min-width: 680px) {
-        #home {
-           height: 100vh;
-        }
-        /*  ----------------- NAVBAR --------------------*/
-        
-        nav h1, nav ul li  {
-           font-size: 1.9em;
-        }
+   }
+   
+   nav h1, nav ul li  {
+      font-size: 1.5em;
+   }
+   
+   /*  ----------------- PROFILE --------------------*/
+   #about {
+      padding: 50px 0 0 0;
+      flex-wrap: wrap;
+   }
+   
+   #profile, #myPath {
+      min-width: 350px;
+      font-size: 1.1em;
+   }
+   
+   #mySkills {
+      flex-direction: row;
+   }
+   
+   #habilidades, #curiosidades {
+      width: 45%;         
+   }
+   
+   /*  ----------------- PROJECTS --------------------*/
+   
+   #projects {
+      padding: 50px 0 0 0;
+   }
       
-        /*  ----------------- PROFILE --------------------*/
-        #about {
-           height: auto;
-           padding-top: 80px;
-           flex-direction: row;
-           justify-content: center;
-        }
-        
-        .container {
-           max-width: 900px;
-           flex-direction: row;
-           justify-content: center;
-           align-items: flex-start;
-        }
-        
-        #profile {
-           font-size: 0.98em;
-           width: 25%;
-           align-items: center;
-        }
-        
-        #details {
-           width: 60%;
-           display: flex;
-           flex-direction: column;
-           margin-left: 40px;
-        }
-        
-        #myPath {
-           font-size: 0.98em;
-           width: 100%;
-        }
-        
-        #profileImg {
-           max-width: 80%;
-        }
-        
-        #mySkills {
-           flex-direction: row;
-           justify-content: space-between;
-           width: 100%
-        }
-        
-        #habilidades, #curiosidades {
-           width: 49%;         
-        }
-        
-        /*  ----------------- PROJECTS --------------------*/
-        #projects {      
-           height: auto;
-        }
-        
-        #projects #container {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-           
-     
-        }
-        
-        .projetos {
-           max-width: 900px;
-           display: flex;
-           flex-direction: row;
-           flex-wrap: wrap;
-           align-items: center;
-           justify-content: space-evenly
-           
-        }
-        
-        .proj {
-           max-width: 40%;
-     
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-        }
-        
-        /*  ----------------- CONTACT --------------------*/
-        #contact {
-           padding-top: 50px;
-           
-        }
-        
-        #boxContact {
-           max-width: 900px;
-           height: auto; 
-           flex-direction: row;
-           justify-content: space-between;      
-        }
-        
-        #textContact{
-           max-width: 49%;   
-           padding: 10px;
-        }
-        
-        #formContact {
-           max-width: 49%;
-           
-        }
-        
-        #formContact label {
-           width: 100%
-        }
-     }
-     
-     
-     
-/* ------------ A N I M A Ç Õ E S ------------ */
+   .projetos {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   .proj {
+      max-width: 95%;
+      
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+   
+   /*  ----------------- CONTATO --------------------*/
+   #contact {
+      padding-top: 50px;
+   }
+   
+   #boxContact {
+      width: 80vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+   }
+   
+   #textContact, #formContact {
+      margin-bottom: 20px;
+      width: 50vw;
+   }
+   
+      
+}
+
+@media screen and (min-width: 680px) {
+   #home: {
+      height: 100vh;
+   }
+   /*  ----------------- NAVBAR --------------------*/
+   
+   nav h1, nav ul li  {
+      font-size: 1.9em;
+   }
+   
+   /*  ----------------- PROFILE --------------------*/
+   #about {
+      height: auto;
+      padding-top: 80px;
+      flex-direction: row;
+      justify-content: center;
+   }
+   
+   .container {
+      max-width: 900px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+   }
+   
+   #profile {
+      font-size: 0.98em;
+      width: 25%;
+      align-items: center;
+   }
+   
+   #details {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+   }
+   
+   #myPath {
+      font-size: 0.98em;
+      width: 100%;
+   }
+   
+   #profileImg {
+      max-width: 80%;
+   }
+   
+   #mySkills {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%
+   }
+   
+   #habilidades, #curiosidades {
+      width: 49%;         
+   }
+   
+   /*  ----------------- PROJECTS --------------------*/
+   #projects {      
+      height: auto;
+   }
+   
+   #projects #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+
+   }
+   
+   .projetos {
+      max-width: 900px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly
+      
+   }
+   
+   .proj {
+      max-width: 40%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   /*  ----------------- CONTACT --------------------*/
+   #contact {
+      padding-top: 50px;
+      
+   }
+   
+   #boxContact {
+      max-width: 900px;
+      height: auto; 
+      flex-direction: row;
+      justify-content: space-between;      
+   }
+   
+   #textContact{
+      max-width: 49%;   
+      padding: 10px;
+   }
+   
+   #formContact {
+      max-width: 49%;
+      
+   }
+   
+   #formContact label {
+      width: 100%
+   }
+}
+   
+
+
+   /* ------------ A N I M A Ç Õ E S ------------ */
+   /*
+   [data-animate] {
+   opacity: 0;
+   transition: 1s;
+   }
+
+   [data-animate='right'] {
+   transform: translate3d(50px, 0, 0);
+   }
+   [data-animate='left'] {
+   transform: translate3d(-50px, 0, 0);
+   }
+
+   [data-animate].animated {
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+   } */
 
 .js-scroll {
-    opacity: 0;
-    transition:  opacity 500ms;
+   opacity: 0;
+   transition:  opacity 500ms;
 }
 
 .scrolled {
-    opacity: 1;
-}
+   opacity: 1;
+}  
 
-/*
+   /*           ANIMAÇÕES NA PÁGINA     */
+
 [data-animate] {
-    opacity: 0;
-    transition: 1s;
+   opacity: 0;
+   transition: 2s;
 }
 
 [data-animate='right'] {
-    transform: translate3d(50px, 0, 0);
+   transform: translate3d(50px, 0, 0);
 }
 [data-animate='left'] {
-    transform: translate3d(-50px, 0, 0);
+   transform: translate3d(-50px, 0, 0);
 }
 
 [data-animate].animated {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}*/
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+}
