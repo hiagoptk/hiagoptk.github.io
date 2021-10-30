@@ -1,20 +1,30 @@
 /*       ---------- WARNING ---------------
 This is a mobile first made css           */
 
-* {
+*  {
    font-family: 'Voltaire', sans-serif;
    box-sizing:border-box;
    padding: 0;
    margin:0;
-   /*border: 1px red solid;*/
+   
 }
 
+* i {
+   color: rgb(128, 74, 207);
 
+}
+
+body {
+   width: 100vw;
+   background-color:rgb(5, 5, 5);
+
+}
 
 .box {
    border-radius: 8px;
    padding: 10px 10px 20px 10px;
-   background-color: rgb(38, 38, 38);
+   background-color: rgb(20, 20, 20);
+
 }
 
 .container {
@@ -27,37 +37,59 @@ This is a mobile first made css           */
 
 /*  ----------------- NAVBAR --------------------*/
 
-nav {
+header {
    background-color: rgb(41, 0, 102);
    position: fixed;
-   width: 100vw;
+   width: 100%;
    height: 50px;
    display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
-   padding-left: 0.5em;
+   justify-content: center;
+   
+   padding-bottom: 8px;
    overflow: hidden;
    z-index: 1;
+
+}
+
+nav {
+   width: 80%;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 nav h1 {
-   font-size: 1.3em;
+   font-size: 1.2em;
 }
 
-nav .hideMenu {
+nav ul {
    list-style: none;
+   color: whitesmoke;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: flex-end;
    align-items: flex-end;
-   width: 45vw;
+   width: fit-content;
    margin-top: 10px;
 
-   visibility: hidden;
 }
+/*
+.hideMenu {
+   visibility: hidden;
+}*/
 
-nav .hideMenu li {
+nav ul li {
    font-size: 1.1em;
    padding: 3px 10px;
+}
+
+nav ul li button {
+   width: fit-content;
+   height: fit-content;
+}
+
+nav ul li button:hover {
+   font-size: 0.8em;
 }
 
 nav a {
@@ -71,29 +103,57 @@ nav a:hover {
 
 }
 
+#flyoutMenu {
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(41, 0, 102);
+   position: fixed;
+   top: 0;
+   left: 0;
+   transform: translate3d(-100vw, 0, 0);
+   transition: transform .3s cubic-bezier(0, .52, 0, 1);
+   overflow: scroll;
+   z-index: 1000;
+}
+#flyoutMenu h2 {
+   margin: 10px 0;
+
+}
+
+#flyoutMenu h2 a {
+   color: rgb(255, 255, 255);
+   margin-left: 15px;
+   text-decoration: none;
+}
+
+#flyoutMenu h2 a:hover {
+   text-decoration: underline;
+}       
+
+#flyoutMenu.show {
+   transform: translate3d(0vw, 0, 0);
+} 
+
 /*  ----------------- HOME --------------------*/
 #home {
-   width: 100vw;
+   width: 100%;
    height:100vh;
-   background-color:rgb(13, 13, 13);
    
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    color: whitesmoke;
-   font-size: 1.9em;
+   font-size: 1.5em;
    overflow: hidden;
 }
 
 #home #textHome {
-   width: 80vw;
-}
-
-#home i {
-   color: rgb(51, 51, 153); 
+   width: fit-content;
+   text-align: justify;
    
 }
+
 
 #home p {
    text-align: center;
@@ -114,12 +174,11 @@ nav a:hover {
 /*  ----------------- ABOUT --------------------*/
 
 #about {
-   width: 100vw;
+   width: 100%;
    min-height: 100vh;
    height: auto;
    padding-top: 50px;
 
-   background-color:rgb(13, 13, 13);
    
    display: flex;
    flex-direction: column;
@@ -127,7 +186,7 @@ nav a:hover {
    
    justify-content: space-between;
    color: whitesmoke;
-   font-size: 1.2em;
+   font-size: 95%;
    overflow: hidden;
 }
 
@@ -294,11 +353,10 @@ nav a:hover {
 
 /*  ----------------- Projetos --------------------*/
 #projects {
-   width: 100vw;
+   width: 100%;
    min-height: 100vh;
    height: auto;
    padding-top: 50px;
-   background-color:rgb(13, 13, 13);
    
    display: flex;
    flex-direction: column;
@@ -357,9 +415,8 @@ nav a:hover {
 
 /*  ----------------- CONTATO --------------------*/
 #contact {
-   width: 100vw;
+   width: 100%;
    min-height:100vh;
-   background-color:rgb(13, 13, 13);
    
    display: flex;
    flex-direction: column;
@@ -412,8 +469,9 @@ button {
 /*  ----------------- FOOTER --------------------*/
 
 footer {
+   width: 100%;
    text-align: center;
-   position: fixed;
+   position: fixed bottom;
    background: whitesmoke;
 }
 
@@ -493,8 +551,8 @@ footer {
       
 }
 
-@media screen and (min-width: 680px) {
-   #home: {
+@media screen and (min-width: 720px) {
+   #home {
       height: 100vh;
    }
    /*  ----------------- NAVBAR --------------------*/
@@ -506,26 +564,28 @@ footer {
    /*  ----------------- PROFILE --------------------*/
    #about {
       height: auto;
-      padding-top: 80px;
+      padding: 80px 20px 0 20px;
       flex-direction: row;
       justify-content: center;
+      
    }
    
    .container {
-      max-width: 900px;
+      width: 80%;
+      max-width: 800;
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
+      font-size: 1.2em;
    }
    
    #profile {
-      font-size: 0.98em;
-      width: 25%;
+      width: 20%;
       align-items: center;
    }
    
    #details {
-      width: 60%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       margin-left: 40px;
@@ -629,3 +689,20 @@ footer {
    opacity: 1;
    transform: translate3d(0, 0, 0);
 }
+
+
+/* ------------ MENU ANIMADO ---------- */
+
+#theMenu {
+   position: fixed;
+   left: 0;
+   top: 0;
+   transform: translate3d(-100vw, 0, 0);
+        
+   width: 100vw;
+   height: 100vw;
+}
+#theMenu .visible {
+   transform: translate3d(0vw, 0, 0)
+}
+
