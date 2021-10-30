@@ -112,6 +112,8 @@ nav a:hover {
    width: 100vw;
    min-height: 100vh;
    height: auto;
+   padding-top: 25px;
+
    background-color:rgb(13, 13, 13);
    
    display: flex;
@@ -286,6 +288,7 @@ nav a:hover {
    width: 100vw;
    min-height: 100vh;
    height: auto;
+   padding-top: 25px;
    background-color:rgb(13, 13, 13);
    
    display: flex;
