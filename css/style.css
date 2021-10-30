@@ -139,15 +139,18 @@ nav a:hover {
    margin: 10px 0;
 }
 
+#profile span {
+   margin-bottom: 30px;
+}
+
 #profile #profileImg {
    width: 100%;
    padding: 8px;
    /*border-top-left-radius: 30%;
    border-bottom-right-radius: 30%;*/
    border-radius: 50%;
-   
    border: solid 3px;
-   
+   margin: 25px 0 0 0;
 }
 
 #myPath {
