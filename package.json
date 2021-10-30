@@ -1,0 +1,26 @@
+{
+  "name": "hiagoptk.github.io",
+  "version": "1.0.0",
+  "description": "Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNBOYG. (freeCodeCamp's 5th Responsive Web Design Project in html5, css3, and maybe JS)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiagoptk/hiagoptk.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiagoptk/hiagoptk.github.io/issues"
+  },
+  "homepage": "https://github.com/hiagoptk/hiagoptk.github.io#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.4"
+  }
+}
