@@ -344,6 +344,7 @@ nav a:hover {
 #contact {
    width: 100vw;
    min-height:100vh;
+   padding-top: 25px;
    background-color:rgb(13, 13, 13);
    
    display: flex;
@@ -356,10 +357,13 @@ nav a:hover {
 
 #contact #textContact {
    width: 80vw;
+   margin: 20px 0;
 }
 
 #contact #formContact {
    width: 80vw;
+   margin-bottom: 10px;
+
 }
 
 #contact #formContact fieldset{
