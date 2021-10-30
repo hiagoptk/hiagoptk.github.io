@@ -1,308 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/bc576e1f1b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Permanent+Marker&family=Righteous&display=swap" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/bc576e1f1b.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./css/style.css">
 
-    <title>Hiago Patrick</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Voltaire&display=swap" rel="stylesheet">
+
+   <title>Hiago Patrick</title>
 </head>
+
 <body>
-    <header id="header">
-        <div class="navTitle">
-            <h1>Hiago Patrick </i></h1>
-        </div>
-
-        <nav id="navbar">
-            <button id="dropbtn"><i class="fas fa-ellipsis-v icon"></i></button>
-            <ul id="nav">
-                <li class="nav-link"><a href="#about"><p>Sobre</p></a></li>
-                <li class="nav-link"><a href="#project-section"><p>Projetos</p></a></li>
-                <li class="nav-link"><a href="#contact-section"><p>Contato</p></a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="welcome-section">
-        
-        <h1 class="typed"> Seja bem-vindo ao meu portifólio!</h1>
-        
-       
-    </section>
-
-    <section id="about">
-        <h2></h2>
-        <!--PERFIL-->
-        <div id="profile" class="box" data-animate='right'>
-            <p><i class="fas fa-map-marker-alt"></i> Rio de Janeiro/RJ - Brasil</p>
-            <img id="profileImg" src="./assets/profile5.jpeg" alt="">
-           
-            <h3>Hiago Patrick <i class="fas fa-ankh"></i></h3>
-             
-            <p>"Sou um animal sentimental, me apego facilmente ao que desperta o meu desejo." - Legião Urbana
-            </p>
-
+   <header>
+      <nav>
+         <h1><a href="#home">Hiago Patrick ><span id="terminal">_</span></a></h1>
+         <ul>
+            <li class="option" id="sobre"><a href="#about">Sobre</a></li>
+            <li class="option" id="projetos"><a href="#projects">Projetos</a></li>
+            <li class="option" id="contato"><a href="#contact">Contato</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <section id="home">
+      <div id="textHome">
+         <p ><i class="fa fa-quote-left" aria-hidden="true"></i> Do not seek to follow in the footsteps of the men of old.  <br> Seek what they sought. <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+         <span id="homeSpan">-Basho</span>
+      </div>
+   </section>
+   
+   <section id="about">
+      <div class="container">
+   
+         <div id="profile" class="box" data-animate='right'>
+            <p><i class="fa fa-map-marker-alt"></i> Rio de Janeiro/RJ - Brasil</p>
+            <img id="profileImg" src="https://hiagoptk.github.io/assets/profile5.jpeg" alt="">
+            <br>
+            <span>"Sou um animal sentimental, me apego facilmente ao que desperta o meu desejo." - Legião Urbana</span>
             <p>Alguém que acredita que a tecnologia em conjunto com a arte é capaz de despertar emoções e que as emoções, por sua vez, são 
-                capazes de transformar o mundo. Então que mudemos o mundo!
+               capazes de transformar o mundo. Então que mudemos o mundo!</p>
+         </div>
+   
+         <div id="details">
+         <div id="myPath" class="box" data-animate='right'>
+            <h3><i class="fa fa-couch"></i> Resumindo um pouco essa história... </h3>
+            <p>Comecei a me interessar pela área de front-end em meados de 2016 e em 2017 eu 
+               comecei o curso de programaçao da freeCodeCamp. 
+               Em 2018, resolvi iniciar a minha gradução em Sistemas de Informação, inicialmente 
+               pela UCB - Universidade Castelo Branco, posteriormente migrando para Universidade
+               Estácio de Sá.
             </p>
-            
-            <div class="person">
-            <p>Tipo de Personalidade: INFP-T Mediador</p>
+            <p>Tenho como objetivos de curto prazo pra minha carreira, atuar na área de front-end 
+               com enfoque alto em UX (experiencia do usuário) e em UCD (user centered 
+               development).
+            </p>
+            <p>Como objetivos de longo prazo é inegável que a tecnologia é o futuro da humanidade, 
+               tenho 
+               interesse em AI (Inteligência Artificial) e áreas como a Biotecnologia, mas isso é 
+               assunto pra uns 15 anos mais tarde. 
+            </p>
+         </div> 
+   
+         <div id="mySkills">
+            <div id="habilidades" class="box" data-animate='right'>
+               <h3> Minhas Habilidades:</h3>
+               <div class="barraNivel">
+   
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>HTML</p>
+                     </div>
+                     <div id="html" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>CSS3</p>
+                     </div>
+                     <div id="css" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>Javascript</p>
+                     </div>
+                     <div id="javascript" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>React JS</p>
+                     </div>
+                     <div id="reactjs" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>UX Design</p>
+                     </div>
+                     <div id="uxdesign" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+               </div>
             </div>
-
-
-        </div>
-
-        <div id="sep">
-
-            <!--INTRO-->
-            <div id="intro" class="box" data-animate='left'>
-                <h3><i class="fas fa-couch"></i> Resumindo um pouco essa história... </h3>
-                <p>Comecei a me interessar pela área de front-end em meados de 2016 e em 2017 eu 
-                    comecei o curso de programaçao da freeCodeCamp. 
-                    Em 2018, resolvi iniciar a minha gradução em Sistemas de Informação, inicialmente 
-                    pela UCB - Universidade Castelo Branco, posteriormente migrando para Universidade Estácio de Sá.
-                </p>
-                <p>Tenho como objetivos de curto prazo pra minha carreira, atuar na área de front-end 
-                    com enfoque alto em UX (experiencia do usuário) e em UCD (user centered development).
-                </p>
-                <p>Como objetivos de longo prazo é inegável que a tecnologia é o futuro da humanidade, tenho 
-                    interesse em AI (Inteligência Artificial) e áreas como a Biotecnologia, mas isso é assunto 
-                    pra uns 15 anos mais tarde. 
-                </p>
+   
+            <div id="curiosidades" class="box scdAnimate" data-animate='right'>
+               <h3><i class="fas fa-cat"></i> Algumas curiosidades sobre mim:</h3>
+               <div class="barraNivel">
+   
+                  <!--introvertido/extrovertido-->
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>introverido</p>
+                        <p>extrovertio</p>
+                     </div>
+                     <div id="introvert" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <!--dia/noite-->
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>dia</p>
+                        <p>noite</p>
+                     </div>
+                     <div id="noturno" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <!--equipe/individual-->
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>equipe</p>
+                        <p>individual</p>
+                     </div>
+                     <div id="individual" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <!--formal/informal-->
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>formal</p>
+                        <p>informal</p>
+                     </div>
+                     <div id="informal" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+                  <!--conservador/renovador-->
+                  <div class="barraGroup">
+                     <div class="txt">
+                        <p>conservador</p>
+                        <p>renovador</p>
+                     </div>
+                     <div id="renew" class="barra">
+                        <div class="bolinha"><i class="fa fa-caret-up"></i></div>
+                     </div>
+                  </div>
+   
+               </div>
             </div>
-
-                <!--CURIOSIDADES-->
-            <div id="curiosidades" class="box" data-animate='right'>
-                <h3><i class="fas fa-cat"></i> Algumas curiosidades sobre mim:</h3>
-                <div class="barraNivel">
-
-                    <!--introvertido/extrovertido-->
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>introverido</p>
-                            <p>extrovertio</p>
-                        </div>
-                        <div id="introvert" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <!--dia/noite-->
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>dia</p>
-                            <p>noite</p>
-                        </div>
-                        <div id="noturno" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <!--equipe/individual-->
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>equipe</p>
-                            <p>individual</p>
-                        </div>
-                        <div id="individual" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <!--formal/informal-->
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>formal</p>
-                            <p>informal</p>
-                        </div>
-                        <div id="informal" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <!--conservador/renovador-->
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>conservador</p>
-                            <p>renovador</p>
-                        </div>
-                        <div id="renew" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <!--HABILIDADES-->
-            <div id="habilidades" class="box" data-animate='left'>
-                <h3> Minhas Habilidades:</h3>
-                <div class="barraNivel">
-
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>HTML</p>
-                        </div>
-                        <div id="html" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>CSS3</p>
-                        </div>
-                        <div id="css" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>Javascript</p>
-                        </div>
-                        <div id="javascript" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>React JS</p>
-                        </div>
-                        <div id="reactjs" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="barraGroup">
-                        <div class="txt">
-                            <p>UX Design</p>
-                        </div>
-                        <div id="uxdesign" class="barra">
-                            <div class="bolinha"><i class="fas fa-caret-up"></i></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="project-section">
-        <h2><i class="fas fa-folder-open"></i> Se liga só em alguns dos projetos que eu já fiz </h2>
-        <div class="projetos">
-            <div class="proj" data-animate='right'>
-                <img class="imgProj" src="./assets/p5.png" alt="">
-                <h3>Landing Page do Seminário Imersões</h3>
-                <p>HTML5, CSS3, Typescript & NextJS </p>
-                <div class="projectBtn">
-                    <a href="https://imersoes.arq.br/" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="https://github.com/hiagoptk/hiagoptk.github.io" target="_blank"><i class="fas fa-code"></i></a>
-                </div>
-            </div>            
-            <div class="proj" data-animate='right'>
-                <img class="imgProj" src="./assets/p1.png">
-                <h3>Tribute Page Responsiva</h3>
-                <p>HTML5 e CSS3</p>
-                <div class="projectBtn">
-                    <a href="http://tobast.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="https://github.com/hiagoptk/tribute-bast" target="_blank"><i class="fas fa-code"></i></a>
-                </div>
-            </div>
-            <div class="proj" data-animate='right'>
-                <img class="imgProj" src="./assets/p2.png" alt="">
-                <h3>Formulário Responsivo</h3>
-                <p>HTML5 e CSS3</p>
-                <div class="projectBtn">
-                    <a href="http://surveyform4fcc.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="https://github.com/hiagoptk/survey-form"target="_blank" ><i class="fas fa-code"></i></a>
-                </div>
-            </div>
-            <div class="proj" data-animate='right'>
-                <img class="imgProj" src="./assets/p3.png" alt="">
-                <h3>Página de Vendas Responsiva</h3>
-                <p>HTML5 e CSS3</p>
-                <div class="projectBtn">
-                    <a href="http://azebenistore.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="https://github.com/hiagoptk/survey-form" target="_blank"><i class="fas fa-code"></i></a>
-                </div>
-            </div>
-            <div class="proj" data-animate='right'>
-                <img class="imgProj" src="./assets/p4.png" alt="">
-                <h3>Página Responsiva de Documentação sobre Gradientes no CSS</h3>
-                <p>HTML5 e CSS3</p>
-                <div class="projectBtn">
-                    <a href="http://cssgradient-doc.netlify.app" target="_blank"><i class="fas fa-laptop"></i></a>
-                    <a href="https://github.com/hiagoptk/doc-page" target="_blank"><i class="fas fa-code"></i></a>
-                </div>
-            </div>
-
-        </div>    
-    </section>
-
-    <section id="contact-section">
-       <h2>Bom, eu acho que é isso...</h2>
-        <div class="mainbox">
-            <div class="box" id="godbye" data-animate='right'>
-                <p> Um tempo atrás, uma menina me disse que o tempo é nosso bem mais precioso 
-                    e que a gente deveria agradecer sempre que alguém resolvesse usá-lo com a gente. 
-                </p>
-                <p>Eu investi meu tempo em cada linha desse código e agradeço a você por ter 
-                    investido seu tempo em dar uma olhada aqui. Se você quiser manter contato,
-                    minhas redes sociais estão nos links abaixo, ou se preferir mandar um email,
-                    utilize o formulário pra isso. 
-                </p>
-                <p>Até mais!</p>
-            </div>
-
-            
-                <form action="" id="contato" class="box" data-animate='left'>
-                    <h3>Pega uma <i class="fas fa-beer"></i> e vamos conversar </h3>
-                    <div class="formGroup">
-                        <label for="name">Nome</label>
-                        <input type="text" name="Nome" class="formEntry">
-                    </div>
-                    <div class="formGroup">
-                        <label for="email">Email</label>
-                        <input type="email" name="Email" class="formEntry">
-                    </div>
-                    <div class="formGroup">
-                        
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Seja educade..."></textarea>
-                    </div>
-                    <button><h3>Enviar</h3></button>
-                </form>
-            
-        </div>
-    </section>
-
-    <footer id="footer">
-        <p>Code made by me with <i class="fa fa-coffee"></i>, <i class="fa fa-heart"></i>, and lots of nonsleeping <i class="fa fa-cloud-moon"></i>. Abril/2020</p>
-        <div class="socialDesktop">
-
-            <div class="boxSocial">
-                <a href="https://www.linkedin.com/in/hiago-patrick-aires-203580145/?originalSubdomain=br" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="boxSocial">
-                <a href="https://www.freecodecamp.org/hiagoptk" target="_blank"><i class="fab fa-free-code-camp"></i></a>
-            </div>
-            <div class="boxSocial">
-                <a href="https://github.com/hiagoptk" target="_blank"><i class="fab fa-github-alt"></i></a>
-            </div>
-            <div class="boxSocial">
-                <a href="http://instragram.com/azebeni" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-
-        </div>
-
-
-    </footer>
-
-    <script src="./js/app.js"></script>
+         </div>
+      </div>
+      </div>
+   
+         
+   </section>
+   
+   <section id="projects">
+      <div id="container">
+         <h1> <i class="fa fa-folder-open"></i> Se liga só em alguns dos meus projetos</h1>
+         <div class="projetos">
+               <div class="proj box" data-animate='right'>
+                   <img class="imgProj" src="https://hiagoptk.github.io/assets/p5.png" alt="">
+                   <h4>Landing Page do Seminário Imersões</h4>
+                   <p>HTML5, CSS3, Typescript & NextJS </p>
+                   <div class="projectBtn">
+                       <a href="https://imersoes.arq.br/" target="_blank"><i class="fa fa-laptop"></i></a>
+                       <a href="https://github.com/hiagoptk/hiagoptk.github.io" target="_blank"><i class="fa fa-code"></i></a>
+                   </div>
+               </div>
+               <div class="proj box" data-animate='right'>
+                   <img class="imgProj" src="https://hiagoptk.github.io/assets/p1.png">
+                   <h4>Tribute Page Responsiva</h4>
+                   <p>HTML5 e CSS3</p>
+                   <div class="projectBtn">
+                       <a href="http://tobast.netlify.app" target="_blank"><i class="fa fa-laptop"></i></a>
+                       <a href="https://github.com/hiagoptk/tribute-bast" target="_blank"><i class="fa fa-code"></i></a>
+                   </div>
+               </div>
+               <div class="proj box" data-animate='right'>
+                   <img class="imgProj" src="https://hiagoptk.github.io/assets/p2.png" alt="">
+                   <h4>Formulário Responsivo</h4>
+                   <p>HTML5 e CSS3</p>
+                   <div class="projectBtn">
+                       <a href="http://surveyform4fcc.netlify.app" target="_blank"><i class="fa fa-laptop"></i></a>
+                       <a href="https://github.com/hiagoptk/survey-form"target="_blank" ><i class="fa fa-code"></i></a>
+                   </div>
+               </div>
+               <div class="proj box" data-animate='right'>
+                   <img class="imgProj" src="https://hiagoptk.github.io/assets/p3.png" alt="">
+                   <h4>Página de Vendas Responsiva</h4>
+                   <p>HTML5 e CSS3</p>
+                   <div class="projectBtn">
+                       <a href="http://azebenistore.netlify.app" target="_blank"><i class="fa fa-laptop"></i></a>
+                       <a href="https://github.com/hiagoptk/survey-form" target="_blank"><i class="fa fa-code"></i></a>
+                   </div>
+               </div>
+               <div class="proj box" data-animate='right'>
+                   <img class="imgProj" src="https://hiagoptk.github.io/assets/p4.png" alt="">
+                   <h4>Página Responsiva de Documentação sobre Gradientes no CSS</h4>
+                   <p>HTML5 e CSS3</p>
+                   <div class="projectBtn">
+                       <a href="http://cssgradient-doc.netlify.app" target="_blank"><i class="fa fa-laptop"></i></a>
+                       <a href="https://github.com/hiagoptk/doc-page" target="_blank"><i class="fa fa-code"></i></a>
+                   </div>
+               </div>
+   
+           </div>    
+      </div>
+   </section>
+   
+   <section id="contact">
+      <h1 ><i class="fa fa-comments"></i> Bom, eu acho que é isso...</h1>
+      <div id="boxContact">
+         <div id="textContact" class="box" data-animate='right'>
+            <p> Um tempo atrás, uma menina me disse que o tempo é nosso bem mais precioso 
+               e que a gente deveria agradecer sempre que alguém resolvesse usá-lo com a gente. 
+            </p>
+            <p>Eu investi meu tempo em cada linha desse código e agradeço a você por ter 
+               investido seu tempo em dar uma olhada aqui. Se você quiser manter contato,
+               minhas redes sociais estão nos links abaixo, ou se preferir mandar um email,
+               utilize o formulário pra isso. 
+            </p>
+            <p>Até mais!</p>
+         </div>
+         <form id="formContact" class="box" data-animate='right'>
+         <h3>Pega uma <i class="fa fa-beer"></i> e vamos conversar </h3>
+         <fieldset>
+      
+            <label for="name">
+               Nome: <br>
+               <input type="text" name="nome" placeholder="Digite aqui seu nome e sobrenome"/>
+            </label>
+         </fieldset>
+         
+         <fieldset>
+          
+            <label for="email">
+               Email:<br>
+               <input type="email" name="email" placeholder="Digite aqui seu email"/>
+            </label>
+         </fieldset>
+         
+         <fieldset>
+            <label for="mensagem">
+               Sua Mensagem:<br>
+               <textarea name="mensagem"  placeholder="Seja educado..."></textarea> 
+               <button><h3>Enviar</h3></button>
+            </label>
+         </fieldset>
+         
+        
+      </form> 
+   
+      </div>
+      
+   </section>
+      
+   <footer>
+      <p> <i class="fa fa-quote-left" aria-hidden="true"></i> This <i class="fa fa-code" aria-hidden="true"></i> was made with <i class="fa fa-heart" aria-hidden="true"></i>, <i class="fa fa-coffee" aria-hidden="true"></i>, <i class="fa fa-music" aria-hidden="true"></i> and lots of non-sleep <i class="fa fa-moon-o" aria-hidden="true"></i> by HiagoPatrick - 2021 <i class="fa fa-quote-right" aria-hidden="true"></i></p>
+   </footer>
+  
+   <script src="./js/app.js"></script>
 </body>
+
 </html>

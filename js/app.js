@@ -1,21 +1,23 @@
+let cont = 0;
 
-// FUNÇÃO QUE FAZ COM QUE O WELCOME DO SITE APAREÇA
-// COMO SE ESTIVE SENDO DIGITADO...
-
-function typeWriter(elemento) {
-    const textoArr = elemento.innerHTML.split('');
-    elemento.innerHTML = '';
-    textoArr.forEach((letra, i) => {
-        setTimeout(() => {elemento.innerHTML += letra}, 75 * i)
-    });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+function piscaOn() {
+   if(cont < 1) {
+      document.getElementById("terminal").style.visibility = "hidden";
+      cont++;
+   } else {
+      piscaOff();
+   }
 }
 
+function piscaOff() {
+   cont = 0;
+   document.getElementById("terminal").style.visibility = "visible"
+}
 
-const titulo = document.querySelector('.typed');
-typeWriter(titulo);
+setInterval(piscaOn, 500);
 
-//FUNÇÃO DE ANIMAÇÃO DOS FADE-INS DOS ELEMENTOS DA 
-//PÁGINA ...
+
+//             ANIMAÇÕES NA PÁGINA
 
 const target = document.querySelectorAll('[data-animate]');
 const animationClass = 'animated';
