@@ -6,7 +6,10 @@ This is a mobile first made css           */
    box-sizing:border-box;
    padding: 0;
    margin:0;
+   border: 1px red solid;
 }
+
+
 
 .box {
    border-radius: 8px;
@@ -20,7 +23,6 @@ This is a mobile first made css           */
    flex-direction: column;
    align-items: flex-start;
    justify-content: space-between;
-   
 }
 
 /*  ----------------- NAVBAR --------------------*/
@@ -28,12 +30,13 @@ This is a mobile first made css           */
 nav {
    background-color: rgb(41, 0, 102);
    position: fixed;
-   width: 100%;
+   width: 100vw;
+   height: 50px;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-   padding-left: 2em;
-   
+   padding-left: 0.5em;
+   overflow: hidden;
    z-index: 1;
 }
 
@@ -41,17 +44,18 @@ nav h1 {
    font-size: 1.3em;
 }
 
-nav ul {
+nav .hideMenu {
    list-style: none;
    display: flex;
    justify-content: space-evenly;
    align-items: flex-end;
-   width: 60vw;
+   width: 45vw;
    margin-top: 10px;
-   
+
+   visibility: hidden;
 }
 
-nav ul li {
+nav .hideMenu li {
    font-size: 1.1em;
    padding: 3px 10px;
 }
@@ -79,6 +83,7 @@ nav a:hover {
    justify-content: center;
    color: whitesmoke;
    font-size: 1.9em;
+   overflow: hidden;
 }
 
 #home #textHome {
@@ -112,7 +117,7 @@ nav a:hover {
    width: 100vw;
    min-height: 100vh;
    height: auto;
-   padding-top: 25px;
+   padding-top: 50px;
 
    background-color:rgb(13, 13, 13);
    
@@ -123,6 +128,7 @@ nav a:hover {
    justify-content: space-between;
    color: whitesmoke;
    font-size: 1.2em;
+   overflow: hidden;
 }
 
 #profile {
@@ -291,7 +297,7 @@ nav a:hover {
    width: 100vw;
    min-height: 100vh;
    height: auto;
-   padding-top: 25px;
+   padding-top: 50px;
    background-color:rgb(13, 13, 13);
    
    display: flex;
@@ -299,10 +305,13 @@ nav a:hover {
    align-items: center;
    color: whitesmoke;
    font-size: 1.2em;
+   overflow: hidden;
 }
 
 #projects #container {
    width: 80vw;  
+   padding-top: 35px;
+
 }
 
 #projects #container .imgProj {
@@ -350,7 +359,6 @@ nav a:hover {
 #contact {
    width: 100vw;
    min-height:100vh;
-   padding-top: 25px;
    background-color:rgb(13, 13, 13);
    
    display: flex;
@@ -359,8 +367,13 @@ nav a:hover {
    justify-content: center;
    color: whitesmoke;
    font-size: 1.3em;
+   overflow: hidden;
 }
 
+#contact h1 {
+   margin-top: 60px;
+
+}
 #contact #textContact {
    width: 80vw;
    margin: 20px 0;
@@ -408,7 +421,7 @@ footer {
 @media screen and (min-width: 480px) {
    /*  ----------------- NAVBAR --------------------*/
 
-   nav,  {
+   nav  {
       font-size: 1em;
       
    }
