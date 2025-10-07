@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/hiagoptk/hiagoptk.github.io#readme",
   "dependencies": {
-    "nodemailer": "^6.7.0"
+    "nodemailer": "^7.0.7"
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.4"
